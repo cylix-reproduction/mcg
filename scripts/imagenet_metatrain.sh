@@ -15,7 +15,7 @@ query_set='Resnet18'
 curriculum=False
 
 CUDA_VISIBLE_DEVICES=0 \
-python train_imagenet.py \
+uv run train_imagenet.py \
   --dataset_name=imagenet --train_dataset_root=${train_dataset_root} --valid_dataset_root=${valid_dataset_root} \
   --log_root=${logroot} --x_hidden_channels=64 --y_hidden_channels=256 \
   --x_hidden_size=128 --flow_depth=8 --num_levels=3 --num_epochs=${epochs} --batch_size=${batchsize} \

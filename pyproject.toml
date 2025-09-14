@@ -5,10 +5,13 @@ description = "Generalizable Black-box Adversarial Attack with Meta Learning"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "advertorch>=0.2.3",
+    "advertorch @ git+https://github.com/cylix-reproduction/advertorch",
     "argparse>=1.4.0",
     "astunparse>=1.6.3",
     "cma>=4.3.0",
+    "h5py>=3.14.0",
+    "matplotlib>=3.10.6",
+    "torch-dct>=0.1.6",
     "torchattacks>=3.5.1",
 ]
 
@@ -87,3 +90,8 @@ explicit = true
 # Disable Pyright (BasedPyright) since this project is forked.
 [tool.basedpyright]
 typeCheckingMode = "off"
+
+[dependency-groups]
+dev = [
+    "tqdm>=4.67.1",
+]

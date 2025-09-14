@@ -29,7 +29,7 @@ train_dataset_root=""
 valid_dataset_root=""
 
 CUDA_VISIBLE_DEVICES=0 \
-python train.py --dataset_name=imagenet \
+uv run train.py --dataset_name=imagenet \
   --train_dataset_root=${train_dataset_root} --valid_dataset_root=${valid_dataset_root} \
   --log_root=${logroot} --x_hidden_channels=${xhidden} --y_hidden_channels=${yhidden} \
   --x_hidden_size=${xsize} --flow_depth=${depth} --num_levels=${level} --num_epochs=${epochs} --batch_size=${batchsize} \
