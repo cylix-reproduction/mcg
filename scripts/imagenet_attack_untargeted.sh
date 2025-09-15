@@ -3,7 +3,7 @@ CUDA_VISIBLE_DEVICES=0
 
 uv run attack.py \
     --target_model_name=resnet18 \
-    --dataset_name=imagenet --dataset_root='./.data' \
+    --dataset_name=imagenet --dataset_root='.data' \
     --generator_path='.checkpoints/imagenet_mcg.pth.tar' \
     --surrogate_model_names=resnet50 \
     --max_query=1000 --class_num=1000 --linf=0.05 \
