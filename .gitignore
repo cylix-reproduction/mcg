@@ -2,7 +2,7 @@
 .data/
 
 # Checkpoints
-checkpoints/
+.checkpoints/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

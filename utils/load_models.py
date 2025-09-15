@@ -109,7 +109,7 @@ def load_imagenet_model(model_name, require_optim=False, defence_method=None):
     return model
 
 
-def load_cifar_model(model_name, home_path='checkpoints/cifar10_target_models/', require_optim=False, defence_method=None):
+def load_cifar_model(model_name, home_path='.checkpoints/cifar10_target_models/', require_optim=False, defence_method=None):
     print('Load cifar model: ', model_name)
     if model_name == 'resnet18':
         pretrained_model = ResNet18()

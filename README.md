@@ -36,12 +36,12 @@ torchvision==0.4.1
 
 #### Pre-trained Models
 
-Please download our [pre-trained model](https://drive.google.com/drive/folders/18m4KY-J3kpAcXGgmMmGroFz08DGxA2FU?usp=sharing) and put it in `./checkpoints` for quick inference.
+Please download our [pre-trained model](https://drive.google.com/drive/folders/18m4KY-J3kpAcXGgmMmGroFz08DGxA2FU?usp=sharing) and put it in `./.checkpoints` for quick inference.
 
-| Model | Description
-| :--- | :----------
-|checkpoints/cifar10_mcg.pth.tar | Pre-trained CIFAR-10 MCG Generator.
-|checkpoints/imagenet_mcg.pth.tar | Pre-trained ImageNet MCG Generator.
+| Model                             | Description                         |
+| :-------------------------------- | :---------------------------------- |
+| .checkpoints/cifar10_mcg.pth.tar  | Pre-trained CIFAR-10 MCG Generator. |
+| .checkpoints/imagenet_mcg.pth.tar | Pre-trained ImageNet MCG Generator. |
 
 #### Attack
 
