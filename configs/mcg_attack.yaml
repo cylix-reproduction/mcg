@@ -1,0 +1,26 @@
+dataset:
+  name: imagenet
+  root: .data
+  batch_size: 1
+models:
+  target: resnet18
+  surrogates:
+    - resnet50
+  defence: null
+generator:
+  checkpoint_path: .checkpoints/imagenet_mcg.pth.tar
+runtime:
+  method: square
+  max_query: 1000
+  targeted: false
+  buffer_limit: 1
+finetune:
+  clean: false
+  perturbation: true
+  glow: true
+  reload_generator: true
+  latent: false
+  mini_batch_size: 20
+logging:
+  log_root: null
+  mute_stdout: false

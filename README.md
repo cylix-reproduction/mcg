@@ -52,6 +52,15 @@ bash scripts/cifar10_attack_untargeted.sh
 bash scripts/imagenet_attack_untargeted.sh
 ```
 
+You can also run the refactored pipeline via the configuration-driven CLI:
+
+```
+uv run python main.py --config configs/mcg_attack.yaml
+```
+
+The example configuration mirrors the ImageNet untargeted setup above and can be
+modified to target different datasets, models or attack strategies.
+
 Please specify the root of your local dataset with `--dataset_root`.
 You can modify `--target_model_name` to change the target model.
 And modify `--attack_method` to change the combined downstream black-box attack methods.
@@ -109,5 +118,4 @@ If you find this work useful for your research, please cite:
   publisher={IEEE}
 }
 ```
-
 
